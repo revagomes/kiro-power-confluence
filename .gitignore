@@ -1,0 +1,35 @@
+__pycache__/
+*.pyc
+.env
+# Belt-and-suspenders: never commit any env file variant.
+.env.*
+!.env.example
+
+# Generated / transient artifacts (may contain internal data — do not commit)
+_inventory/
+_screenshots/
+_export/
+_tmp_*.py
+_inventory_qas.py
+_export_qas.py
+QAS_STATS.md
+QAS_MIGRATION_REPORT.md
+
+# Common secret/credential file patterns
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+credentials.json
+secrets.*
+
+# Lagune
+/.lagune/templates/
+/.lagune/hooks/
+/.lagune/proofs/
+/.lagune/specializations.md
+/.lagune/skills/*
+/**/lagune.*
+/**/lagune/

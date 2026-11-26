@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "confluence": {
+      "command": "uvx",
+      "args": ["--from", "fastmcp", "fastmcp", "run", "/path/to/kiro-power-confluence/server/confluence_mcp.py"],
+      "env": {
+        "CONFLUENCE_PAT": "${env:CONFLUENCE_PAT}",
+        "CONFLUENCE_BASE_URL": "${env:CONFLUENCE_BASE_URL}",
+        "CONFLUENCE_SPACE": "${env:CONFLUENCE_SPACE}"
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+# .aiignore — files AI assistants/tools should NOT read or include in context.
+#
+# NOTE: Not all AI tools honor this file. Kiro CLI's file tools respect
+# .gitignore/.ignore rather than .aiignore. This file is defense-in-depth for
+# tools that DO support .aiignore (e.g. JetBrains AI Assistant) and documents
+# intent for humans. Keep it in sync with .gitignore's sensitive entries.
+
+# ── Secrets & credentials (never expose to AI context) ────────────────────────
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+credentials.json
+secrets.*
+**/*token*
+**/*secret*
+
+# ── Generated / transient artifacts (may contain internal data) ───────────────
+_inventory/
+_screenshots/
+_export/
+_tmp_*.py
+_inventory_qas.py
+_export_qas.py
+QAS_STATS.md
+QAS_MIGRATION_REPORT.md
+
+# ── Build / cache ─────────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
