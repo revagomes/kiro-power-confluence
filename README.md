@@ -55,7 +55,7 @@ All configuration is via environment variables — no Confluence instance or spa
 | `CONFLUENCE_PAT` | Yes | Personal access token for authentication |
 | `CONFLUENCE_BASE_URL` | Yes | Confluence instance URL (e.g., `https://confluence.example.com`) |
 | `CONFLUENCE_SPACE` | Yes | Default space key (e.g., `DOCS`, `TEAM`) |
-| `CONFLUENCE_UPLOAD_DIRS` | No | `os.pathsep`-separated directories attachments may be uploaded from (default: server working directory) |
+| `CONFLUENCE_UPLOAD_DIRS` | No | `os.pathsep`-separated directories attachments may be uploaded from (default: server working directory). Set it in the MCP server's `env`; restart the server for changes to take effect. |
 
 ### Example configurations
 
